@@ -168,3 +168,4 @@ Built for job interview demonstration - February 2026
 
 This project is for educational and demonstration purposes.
 
+# neurogine-kanban
