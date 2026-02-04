@@ -62,7 +62,7 @@ createdb neurogine_db
 
 2. Create database user:
 ```sql
-CREATE USER neurogine_user WITH PASSWORD 'neurogine_pass_2024';
+CREATE USER neurogine_user WITH PASSWORD 'neurogine_pass_2026';
 GRANT ALL PRIVILEGES ON DATABASE neurogine_db TO neurogine_user;
 ```
 
