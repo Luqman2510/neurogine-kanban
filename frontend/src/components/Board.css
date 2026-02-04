@@ -1,0 +1,169 @@
+/* Apple-Style Board Layout - Full Whiteboard */
+.board-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background: #f5f5f7;
+}
+
+/* Board Header */
+.board-header {
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 24px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.board-title-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.board-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1d1d1f;
+    margin: 0;
+}
+
+.connection-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    background: #f0fdf4;
+    border: 1px solid #86efac;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #166534;
+}
+
+.connection-indicator.disconnected {
+    background: #fef2f2;
+    border-color: #fca5a5;
+    color: #991b1b;
+}
+
+.connection-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #22c55e;
+    animation: pulse 2s infinite;
+}
+
+.connection-indicator.disconnected .connection-dot {
+    background: #ef4444;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.board-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-board-action {
+    padding: 8px 16px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1d1d1f;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-board-action:hover {
+    background: #f9fafb;
+    border-color: #d1d5db;
+}
+
+.btn-board-action.primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+}
+
+.btn-board-action.primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* Board Content - Full Whiteboard */
+.board-content {
+    flex: 1;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 48px;
+}
+
+.columns-container {
+    display: flex;
+    gap: 32px;
+    min-height: 100%;
+    align-items: flex-start;
+    padding-bottom: 48px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .board-content {
+        padding: 24px;
+    }
+    
+    .columns-container {
+        gap: 16px;
+    }
+}
+
+/* Dark Mode */
+[data-theme="dark"] .board-container {
+    background: #0f172a;
+}
+
+[data-theme="dark"] .board-header {
+    background: #1e293b;
+    border-bottom-color: #334155;
+}
+
+[data-theme="dark"] .board-title {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .connection-indicator {
+    background: #064e3b;
+    border-color: #065f46;
+    color: #86efac;
+}
+
+[data-theme="dark"] .connection-indicator.disconnected {
+    background: #7f1d1d;
+    border-color: #991b1b;
+    color: #fca5a5;
+}
+
+[data-theme="dark"] .btn-board-action {
+    background: #0f172a;
+    border-color: #475569;
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .btn-board-action:hover {
+    background: #334155;
+    border-color: #64748b;
+}
+
