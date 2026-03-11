@@ -1,6 +1,8 @@
 # 🚀 Neurogine - Real-Time Collaborative Kanban Board
-
+# I wan to add anything that I want.
 A modern, full-stack Kanban board application with real-time collaboration features, built with Spring Boot and React.
+
+# What if I add One more.
 
 ## ✨ Features
 
@@ -167,6 +169,9 @@ Built for job interview demonstration - February 2026
 ## 📄 License
 
 This project is for educational and demonstration purposes.
+
+## Practice
+This is my practice commit!
 
 # neurogine-kanban
 # neurogine-kanban
