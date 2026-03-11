@@ -5,7 +5,7 @@ import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import Dashboard from './pages/Dashboard';
 import './App.css';
-
+// What if I add something here
 // Protected Route Component
 function ProtectedRoute({ children }) {
     const token = localStorage.getItem('token');
