@@ -168,5 +168,8 @@ Built for job interview demonstration - February 2026
 
 This project is for educational and demonstration purposes.
 
+## Practice
+This is my practice commit!
+
 # neurogine-kanban
 # neurogine-kanban
